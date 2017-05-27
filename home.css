@@ -1,0 +1,46 @@
+
+body{
+	/*background-image: url(Res/field.jpg);*/
+	margin: 6px;
+	
+
+}
+.navv{
+	background-color: #2B6CA3;
+	opacity: 3px;
+}
+.three{
+	padding: 0px;
+	background-color: white;
+	
+}
+.videotitle{
+	padding: 1px;
+	background-color: black;
+	color: white;
+}
+.search{
+	padding: 0px;
+}
+.application{
+	padding: 0px;
+}
+.objectives{
+	padding: 0px;
+	color: black;
+	width:390px;
+	height: 560px;
+}
+.Achievments{
+	padding-left: 0px;
+}
+.courses{
+	padding: 2px;	
+
+}
+.services{
+	padding: 0px;
+	text-align: left;
+	font-size: 20px;
+	font-family: serif;
+}

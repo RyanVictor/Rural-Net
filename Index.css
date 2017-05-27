@@ -1,0 +1,21 @@
+body{
+	background-image: url(Res/field.jpg);
+	background-size: cover;
+	
+}
+.indexhead{
+	color: white;
+	background-image: url(Res/cam.jpg)
+
+}
+.intro{
+	color: white;
+}
+.Explore{
+	font-style: italic;
+	color: red;
+
+}
+.inntro{
+	font-size: 19px;
+}

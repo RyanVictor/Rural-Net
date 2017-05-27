@@ -1,0 +1,27 @@
+
+body{
+	margin: 3px;
+}
+.est{
+	padding: 2px;
+	width: 800px;
+	color: black;
+}
+.loc{
+	padding: 2px;
+}
+.log{
+	color: white;
+}
+.patners{
+	padding: 1px;
+}
+.sustain{
+	text-align: left;
+}
+.map{
+	width: 500px;
+}
+.navv{
+	background-color: #2B6CA3;
+}

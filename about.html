@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navv">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand glyphicon glyphicon-home" href="Index.html"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="home.html" >Rural Net</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+
+        
+        <li><a href="#">News</a></li>
+        <li><a href="#">Jobs</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="Login"><a href="logi.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+        <li class="Sign"><a href="signin.php"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="jumbotron est">
+	<h2 style="font-family: sans-serif; color:#2B6CA3">ABOUT US</h2>
+	<p>RuralNet is driven by a shared mission to connect people. The way we connect people is by using leading technologies  that deliver quality and efficiency, this enables us to consistently deliver our services to our environment.<br><br>
+​
+RuralNet is a serviceprovider that facilitates the Kenyan domestic market. We have a solution for all small and medium business needs. We understand the domestic market like no other and have solutions to face the challenges of doing business on the countryside.<br><br>
+​
+Read more..</p></div>
+		</div>
+		
+		<div class="col-lg-3"> 
+				<div class="patners" style="padding: 0px;">
+					<h2 style="font-family: sans-serif; color:#2B6CA3;">PATNERSHIP</h2>
+					<p>Rural Net patners with the following organisations for effective and full support of each other in provision of quality ICT skills to students</p>
+					<!-- Adding images -->
+					<div><img class="thumbnail" src="Res/AO.jpg"><p>Ao Institutions</p></div>
+
+				</div>
+		</div>
+	</div>
+	
+</div>
+<hr width="100%">
+	<CENTER>
+	<div style="width: 800px; align-content: center;">
+		<h1 style="color:#2B6CA3; font-size: 55px;">SUSTAINABILITY</h1>
+		<P class="sustain">Corporate Social Responsibility (CSR) is in our <br><br>
+​
+We bring value into everything that we do, we just happen to like to work with IT. We make use of tough, proven and durable technologies to face the challenges of running a business in the Kenyan countryside. <br><br>
+​
+We minimize our environmental footprint by avoiding generator power, and selecting equipment that is tough enough to withstand our climate. We recycle damaged laptops into their core components, which are aluminium and glass. The laptop batteries are recycled at specialized facilities in Europe. 
+​
+Power plan for RuralNet</P><br>
+  <img src="Res/table.jpg">
+	</div>
+	</CENTER>
+	<hr width="50%" style="color: blue;">
+
+<div class="jumbotron loc">
+	<h2 style="font-style: italic;">Rural Net Location on GoogleMaps</h2>
+	<!-- Maps Location of rural Net -->
+	 <div id="map"></div>
+	
+	
+</div>
+
+
+
+
+ <script>
+      function initMap() {
+        var uluru = {lat: 0.1811, lng: 34.2996};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7UI9a5D09dlOhaJd9aNvoD6zk2Ng3IEA&callback=initMap">
+    </script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?/callback=myMap"></script>
+<script type="text/javascript" src = "bootstrap/js/jquery.js"></script>
+<script type="text/javascript" arc = "bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

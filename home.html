@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+	<title>
+		Home
+	</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="shortcut icon" href="Res/AO.jpg" class="img img-circle">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navv" id="navigate">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand glyphicon glyphicon-home" href="Index.html"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active" ><a href="#" >Rural Net</a></li>
+        <li class=""><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+        <li><a href="#">News</a></li>
+        <li><a href="#">Jobs</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#"><form>
+      	<span class="glyphicon glyphicon-search"></span>
+			<input type="text" placeholder="Search here..." size="30" onkeyup="showResult(this.value) ">
+			<div id="livesearch"></div>
+			</form></a></li>
+        <li class="Login"><a href="logi.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+        <li class="Sign"><a href="signin.php"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<div style="height: 400px;background-image: url(Res/aple.jpg);background-size: cover;">
+	<center>
+	<br><br>
+		<h1 style="font-size: 70px;font-family: sans-serif; color:white;">RURALNET KENYA</h1>
+		<hr width="70%" height="2px"><br>
+		<p style="color: white;font-size: 40px;">We connect Rural Kenya to the world...</p>
+		<p style="color: white;font-size: 40px;">...And the world to rural Kenya!</p>
+	</center>
+	
+</div>
+
+<div class="container jumbotron" style="background-image: url(Res/compsss.jpg); background-size: cover;">
+	<div class="row">
+		<div class="col-lg-3 jumbotron application">
+			<h2>Enrollment</h2>
+			<ul style="list-style: none;">
+				<li><a href="">Online Courses</a></li>
+				<li><a href="#">Offline Courses</a></li>
+				<li><a href="">Short Courses</a></li>
+				<li><a href="#">Computer Orientation</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-9">
+			
+
+								<!-- Start WOWSlider.com BODY section -->
+					<div id="wowslider-container1">
+					<div class="ws_images"><ul>
+							<li><img src="data1/images/cam.jpg" alt="cam" title="cam" id="wows1_0"/></li>
+							<li><img src="data1/images/field.jpg" alt="field" title="field" id="wows1_1"/></li>
+							<li><img src="data1/images/aple.jpg" alt="aple" title="aple" id="wows1_2"/></li>
+							<li><a href="http://wowslider.net"><img src="data1/images/compsss.jpg" alt="jquery slideshow" title="compsss" id="wows1_3"/></a></li>
+							<li><img src="data1/images/comp.jpg" alt="comp" title="comp" id="wows1_4"/></li>
+						</ul></div>
+						<div class="ws_bullets"><div>
+							<a href="#" title="cam"><span><img src="data1/tooltips/cam.jpg" alt="cam"/>1</span></a>
+							<a href="#" title="field"><span><img src="data1/tooltips/field.jpg" alt="field"/>2</span></a>
+							<a href="#" title="aple"><span><img src="data1/tooltips/aple.jpg" alt="aple"/>3</span></a>
+							<a href="#" title="compsss"><span><img src="data1/tooltips/compsss.jpg" alt="compsss"/>4</span></a>
+							<a href="#" title="comp"><span><img src="data1/tooltips/comp.jpg" alt="comp"/>5</span></a>
+						</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+					<div class="ws_shadow"></div>
+					</div>	
+					<script type="text/javascript" src="engine1/wowslider.js"></script>
+					<script type="text/javascript" src="engine1/script.js"></script>
+					<!-- End WOWSlider.com BODY section -->
+		</div>
+	</div>
+	
+</div>
+<hr width="100%">
+		
+		<center>
+		<div>
+			<h1 style="color: #2B6CA3;font-size: 60px;">RURAL NET SERVICES</h1>
+		</div>
+		</center>
+<div class="container Achievments">
+	<div class="row services">
+		<div class="col-lg-4">
+		<div class="jumbotron objectives">
+				    <center><h2 style="font-style: italic; color: #2B6CA3">Fast Internet</h2></center>
+				<center><img src="Res/net.jpg" class="thumbnail"></center>
+				<p>At last you can enjoy broadband internet at a low, fixed, monthly cost. Inquire about our competitive rates and start browsing careless today !
+​
+				<br><br>
+​
+				Read more here.</p>
+			</div>
+			
+
+		</div>
+		<div class="col-lg-4">
+			<div class="jumbotron objectives">
+				    <center><h2 style="font-style: italic; color: #2B6CA3"> ICT Consultancy</h2></center>
+				<center><img src="Res/consult.jpg" class="thumbnail"></center>
+				<p>Ruralnet offers it's services based on industry best practices. We offer project management, IT Support, CCTV surveillance and IT literacy and responsibility programs.<br><br>
+​
+				Read more here.</p>
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<div class="jumbotron objectives">
+				    <center><h2 style="font-style: italic; color: #2B6CA3">Business Incubation</h2></center>
+				<center><img src="Res/busines.jpg" class="thumbnail"></center>
+				<p>
+​					Kickstart your business with the help of our skilled coaches, we offer a safe place to work with broadband internet access, 					uninterrupted power and affordable office space.<br><br>
+​
+ 			
+				Read more here.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<hr width="70%">
+<div class="container Achievments">
+	<div class="row services">
+		<div class="col-lg-4">
+		<div class="jumbotron objectives">
+				    <center><h2 style="font-style: italic; color: #2B6CA3">ICT Traninings</h2></center>
+				<center><img src="Res/training.jpg" class="thumbnail"></center>
+				<p style="font-size: 18px;">RuralNet is officially accredited by the Computer Society of Kenya (CSK)
+						We provide these courses to prepare you for your IT career :
+						<ul style="list-style: none; font-size: 20px;">
+						<li>Apple Mac Essentials</li>
+						<li>Windows Essentials</li>
+						<li>MS Office Essentials</li>
+						<li>Internet Essentials</li>
+						<li>Networking Essentials</li>
+						</ul>
+						​
+						</p>
+			</div>
+			
+
+		</div>
+		<div class="col-lg-4">
+			<div class="jumbotron objectives">
+				    <center><h2 style="font-style: italic; color: #2B6CA3">IT Rental Services</h2></center>
+				<center><img src="Res/box.jpg" class="thumbnail"></center>
+				<p>Is your computer letting you down? Do you need a projector for a presentation, or do you want a mobile computer classroom ? We offer quality equipment at competitive rates!
+				<br><br>
+​
+				Read more here.</p>
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+			<div class="jumbotron objectives">
+				    <center><h2 style="font-style: italic; color: #2B6CA3"> Ict Consultancy</h2></center>
+				<center><img src="Res/busines.jpg" class="thumbnail"></center>
+				<p>
+​					Kickstart your business with the help of our skilled coaches, we offer a safe place to work with broadband internet access, 					uninterrupted power and affordable office space.<br><br>
+​
+ 			
+				Read more here.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<hr width="100%">
+<center>
+	<div class="jumbotron courses">
+	<h3 style="color:#2B6CA3; ">Cources Offered</h3>
+	<table width="100%">
+		<thead>
+			<th>Course</th>
+			<th>Duration</th>
+			<th>Fees</th>
+			<th>Application Form</th>
+		</thead>
+		<tbody>
+			<td>Introduction</td>
+			<td>3 weeks</td>
+			<td>2500/=</td>
+			<td><a href="">Introduction Application Forms</a></td>
+
+		</tbody>
+		<tbody>
+			<td>WordPress</td>
+			<td>4 weeks</td>
+			<td>9000/=</td>
+			<td><a href="">Wordpress Application Forms</a></td>
+
+		</tbody>
+		<tbody>
+			<td>HTML5 & MYSQL</td>
+			<td> 7 weeks</td>
+			<td>15,000/=</td>
+			<td><a href="">HTML5 Application Forms</a></td>
+
+		</tbody>
+			
+
+	</table>
+	</div>
+	</center>
+<br>
+
+	</div>
+</div>
+
+
+
+
+			
+		
+
+
+<script type="text/javascript" src = "bootstrap/js/jquery.js"></script>
+<script type="text/javascript" arc = "bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
